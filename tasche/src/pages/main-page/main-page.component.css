@@ -23,7 +23,7 @@
     width: 40%;
     height: 100%;
     z-index: 10;
-    left: 350px;
+    left: 300px;
 }
 
 .image{
@@ -34,4 +34,15 @@
     top: 0;
     height: 100%;
     width: 60%;
+}
+
+.text{
+    font-family: var(--text-font);
+    font-size: 18px;
+    text-align: justify;
+}
+
+.headingText{
+    font-family: var(--text-font);
+
 }
