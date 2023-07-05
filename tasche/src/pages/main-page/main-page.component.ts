@@ -8,6 +8,7 @@ import { Component, HostListener, OnInit } from '@angular/core';
 export class MainPageComponent implements OnInit {
 
   navbarfixed:boolean = false;
+  music : any;
 
   @HostListener('window:scroll',['$event']) onscroll(){
     if(window.scrollY > 100){

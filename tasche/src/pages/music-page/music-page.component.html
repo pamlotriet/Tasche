@@ -1,0 +1,14 @@
+<div class="gigscontent" id="gigs">
+    <div class="innerContent">
+        <div class="ul">
+            <div *ngFor="let show of shows" class="li">
+                <img class="poster" src="{{show.poster}}">
+                <h1>{{ show.location }}</h1>
+                <p class="text">{{ show.city }}</p>
+                <p class="text">{{show.date}} {{show.time}}</p>
+                <button class="tickets" (click)="bookTicket(show.tickets)">BOOK TICKET</button>
+            </div>
+        </div>
+    </div>
+</div>
+
