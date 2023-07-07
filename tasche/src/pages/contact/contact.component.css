@@ -4,6 +4,8 @@
     width: 100%;
     height: fit-content;
     background-color: #ffffff;
+    justify-content: center;
+    align-items: center;
 }
 
 .innerContent{
@@ -11,17 +13,21 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    width: fit-content;
+    height: fit-content;
+    margin:50px;
 }
 
 input{
-    width: 500px;
-    height: 32px;
+    width: 400px;
+    height: 40px;
     border-radius: 10px;
     border: 2px solid #C17E27;
 }
 
 textarea{
-    width: 500px;
+    width: 400px;
     height: 300px;
     border-radius: 15px;
     border: 2px solid #C17E27;
@@ -40,8 +46,8 @@ textarea{
     font-size: 12px;
     text-align: center;
     font-weight: bold;
-    color: white;
-    background-color: #C17E27;
+    color: #ffffff;
+    background-color: #C17E27;;
     margin-top: 10px;
     margin-bottom: 14px;
 }
@@ -53,4 +59,18 @@ textarea{
     cursor: pointer;
     border: 1px solid;
     border-color: #C17E27;
+}
+
+i{
+    font-size:32px;
+    margin: 10px;
+
+}
+
+i:hover{
+    cursor: pointer;
+}
+
+a{
+    color: black;
 }
