@@ -3,7 +3,7 @@
     flex-direction: column;
     width: 100%;
     height: fit-content;
-    background-color: #ffffff;
+    background-color: #f5f5f5;
     justify-content: center;
     align-items: center;
 }
@@ -20,17 +20,44 @@
 }
 
 input{
+    font-family: var(--text-font);
+    font-size: 14px;
     width: 400px;
     height: 40px;
     border-radius: 10px;
-    border: 2px solid #C17E27;
+    padding: 10px;
+    margin: 20px;
+    border: 2px solid #C7C7C7;
 }
 
 textarea{
+    font-family: var(--text-font);
+    font-size: 14px;
     width: 400px;
     height: 300px;
     border-radius: 15px;
-    border: 2px solid #C17E27;
+    padding: 10px;
+    border: 2px solid #C7C7C7;
+    margin: 20px;
+}
+
+.fanperks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 40px;
+    border-radius: 100px;
+    box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.10);
+    margin: 20px;
+    padding: 20px;
+    color: black;
+}
+
+.fanperks:hover{
+    cursor: pointer;
+    background-color: #C17E27;
+    color: #ffffff;
 }
 
 .p-float-label{
@@ -40,16 +67,16 @@ textarea{
 .send {
     border: none;
     border-radius: 100px;
-    width: 200px;
-    height: 35px;
+    width: 250px;
+    height: 40px;
     font-family: var(--text-font);
-    font-size: 12px;
+    font-size: 14px;
     text-align: center;
     font-weight: bold;
     color: #ffffff;
     background-color: #C17E27;;
     margin-top: 10px;
-    margin-bottom: 14px;
+    margin-bottom: 50px;
 }
 
 .send:hover {
@@ -72,5 +99,29 @@ i:hover{
 }
 
 a{
-    color: black;
+    font-family: var(--text-font);
+    font-size: 14px;
+
+    text-decoration: none;
+}
+
+a:hover{
+    font-family: var(--text-font);
+    font-size: 14px;
+ 
+    text-decoration: none;
+}
+
+
+.break{
+    margin: 50px;
+    border: 1px solid grey;
+    width: 300px;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
 }

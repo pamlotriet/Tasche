@@ -12,9 +12,9 @@ export class MainPageComponent implements OnInit {
 
   sectionColors = [
     { section: 'home', color: '#C17E27' },
-    { section: 'about', color: '#ffffff' },
+    { section: 'about', color: '#f5f5f5' },
     { section: 'gigs', color: '#C17E27' },
-    { section: 'contact', color: '#ffffff' }
+    { section: 'contact', color: '#f5f5f5' }
   ];
 
   @HostListener('window:scroll',['$event']) onscroll(){

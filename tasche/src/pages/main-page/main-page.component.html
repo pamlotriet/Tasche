@@ -1,8 +1,8 @@
 <div class="home">
     <div class="twinkling">
         <div class="stars"></div>
-      </div>
-      
+    </div>
+
     <div class="nav">
         <nav class="navbar" id="nav" (scroll)="onscroll()" [ngClass]="navbarfixed?'fixed': 'nofixed'">
             <ul>
@@ -19,31 +19,34 @@
     <div class="content">
         <div class="landing" id="home">
             <div class="info">
-                <div class="infoText">
-                    <h1 class="headingText">Tasché</h1>
-                <p class="text">Singer | Songwriter</p>
-                <p class="text">
-                    Tasché Burger is 'n talentvolle Suid-Afrikaanse kunstenaar met 'n sielvolle stem en hartroerende
-                    optredes. Sy het haar passie vir musiek ontdek en op 'n opmerklike reis na haar drome vertrek.
-                    Tasché se unieke musiekstrekke, wat 'n mengsel van genres soos pop, rock en soul insluit, raak diep
-                    aan by luisteraars en neem hulle mee op 'n emosionele reis. Sy is bekend as die wenner van "The
-                    Voice South Africa" in 2019 en het sedertdien suksesvolle snitte vrygestel en met bekende
-                    kunstenaars saamgewerk. Tasché se warm persoonlikheid, inspirerende boodskappe en onbetwisbare
-                    talent maak haar 'n opkomende ster in die Suid-Afrikaanse musiekbedryf.</p>
+                <div class="image">
+                    <img class="outNow" src="../../assets/images/EkBly11.svg" alt="Unable to load image">
                 </div>
-                    <div class="image">
-                        <img class="outNow" src="../../assets/images/prentjiesss.png" alt="Unable to load image">
-                    </div>
+                <div class="infoText">
+                   <div class="innerText">
+                    <h1 class="headingText">Tasché</h1>
+                    <p class="text">Singer | Songwriter</p>
+                    <p class="text">
+                        Tasché Burger is 'n talentvolle Suid-Afrikaanse kunstenaar met 'n sielvolle stem en hartroerende
+                        optredes. Sy het haar passie vir musiek ontdek en op 'n opmerklike reis na haar drome vertrek.
+                        Tasché se unieke musiekstrekke, wat 'n mengsel van genres soos pop, rock en soul insluit, raak
+                        diep
+                        aan by luisteraars en neem hulle mee op 'n emosionele reis. Sy is bekend as die wenner van "The
+                        Voice South Africa" in 2019 en het sedertdien suksesvolle snitte vrygestel en met bekende
+                        kunstenaars saamgewerk. Tasché se warm persoonlikheid, inspirerende boodskappe en onbetwisbare
+                        talent maak haar 'n opkomende ster in die Suid-Afrikaanse musiekbedryf.</p>
+                   </div>
+                </div>
             </div>
         </div>
-       <div class="about">
-        <app-about-page>x</app-about-page>
-       </div>
-       <div class="music">
-        <app-music-page></app-music-page>
-       </div>
-       <div class="contact">
-        <app-contact></app-contact>
-       </div>
+        <div class="about">
+            <app-about-page>x</app-about-page>
+        </div>
+        <div class="music">
+            <app-music-page></app-music-page>
+        </div>
+        <div class="contact">
+            <app-contact></app-contact>
+        </div>
     </div>
 </div>
