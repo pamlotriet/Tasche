@@ -1,4 +1,8 @@
 <div class="home">
+    <div class="twinkling">
+        <div class="stars"></div>
+      </div>
+      
     <div class="nav">
         <nav class="navbar" id="nav" (scroll)="onscroll()" [ngClass]="navbarfixed?'fixed': 'nofixed'">
             <ul>
@@ -15,7 +19,8 @@
     <div class="content">
         <div class="landing" id="home">
             <div class="info">
-                <h1 class="headingText">Tasché</h1>
+                <div class="infoText">
+                    <h1 class="headingText">Tasché</h1>
                 <p class="text">Singer | Songwriter</p>
                 <p class="text">
                     Tasché Burger is 'n talentvolle Suid-Afrikaanse kunstenaar met 'n sielvolle stem en hartroerende
@@ -25,9 +30,10 @@
                     Voice South Africa" in 2019 en het sedertdien suksesvolle snitte vrygestel en met bekende
                     kunstenaars saamgewerk. Tasché se warm persoonlikheid, inspirerende boodskappe en onbetwisbare
                     talent maak haar 'n opkomende ster in die Suid-Afrikaanse musiekbedryf.</p>
-            </div>
-            <div class="image">
-                <img class="outNow" src="../../assets/images/prentjiesss.png" alt="Unable to load image">
+                </div>
+                    <div class="image">
+                        <img class="outNow" src="../../assets/images/prentjiesss.png" alt="Unable to load image">
+                    </div>
             </div>
         </div>
        <div class="about">
@@ -35,6 +41,9 @@
        </div>
        <div class="music">
         <app-music-page></app-music-page>
+       </div>
+       <div class="contact">
+        <app-contact></app-contact>
        </div>
     </div>
 </div>
