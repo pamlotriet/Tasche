@@ -1,27 +1,46 @@
 <div class="content" id="contact">
-   <div class="innerContent">
-    <h1 class="text">GET IN TOUCH</h1>
-    <a href="https://myfanpark.com/en-ZA/tascheburger"><div class="fanperks">
-        Persoonlike Video & other coolstuff @myFanPark
-    </div></a>
-    <a href="https://www.buymeacoffee.com/tasche"><div class="fanperks">
-         Book me for an intimate Zoom performance
-    </div></a> 
-    <a href="https://myfanpark.com/en-ZA/tascheburger/live"><div class="fanperks">
-       Online chats, singing lessons, online live show
-    </div></a>
-    <hr class="break">
-    <h1 class="textBookings">BOOKINGS</h1>
-    <input type="text" id="inputtext" placeholder="Email Address" > 
-    <textarea inputId="textarea" rows="3" style="resize: none;" cols="30" placeholder="Message" ></textarea>
-    <button class="send">SEND</button>
-   
-    <div class="socials">
-        <i class="pi pi-instagram"></i>
-        <i class="pi pi-facebook"></i>
-        <i class="fa-brands fa-spotify"></i>
-        <i class="fa-brands fa-youtube"></i>
-        <i class="fa-solid fa-music"></i>
+    <div class="spinner-container" *ngIf="this.spinner">
+        <div class="spinner">
+          <div class="spinner-inner"></div>
+        </div>
+      </div>      
+    <div class="innerContent">
+        <h1 class="text">GET IN TOUCH</h1>
+        <a href="https://myfanpark.com/en-ZA/tascheburger">
+            <div class="fanperks">
+                Persoonlike Video & other coolstuff @myFanPark
+            </div>
+        </a>
+        <a href="https://www.buymeacoffee.com/tasche">
+            <div class="fanperks">
+                Book me for an intimate Zoom performance
+            </div>
+        </a>
+        <a href="https://myfanpark.com/en-ZA/tascheburger/live">
+            <div class="fanperks">
+                Online chats, singing lessons, online live show
+            </div>
+        </a>
+        <hr class="break">
+        <h1 class="textBookings">Message Me</h1>
+        <h2 class="subHeading">Send me a message and I will get back to you</h2>
+        <input type="text" id="inputtext" placeholder="Name" [(ngModel)]="name">
+        <input type="text" id="inputtext" placeholder="Email Address" [(ngModel)]="email">
+        <textarea inputId="textarea" rows="3" style="resize: none;" cols="30" placeholder="Message"
+            [(ngModel)]="message"></textarea>
+        <button class="send" (click)="sendEmail()">SEND</button>
+        <hr class="break">
+        <h1 class="text">GENERAL CONTACT</h1>
+        <h1 class="subsubHead">BOOKINGS</h1>
+        <a href="mailto:your-email@example.com" class="text">lyndelle@valkievancoke.co.za</a>
     </div>
-   </div>
+    <div class="socials">
+        <a class="sosial" href="https://www.instagram.com/tascheburger/"><i class="pi pi-instagram"></i></a>
+        <a class="sosial" href="https://www.facebook.com/tasche/"><i class="pi pi-facebook"></i></a>
+        <a class="sosial" href="https://open.spotify.com/search/tasche"><i class="fa-brands fa-spotify"></i></a>
+        <a class="sosial" href="https://www.youtube.com/channel/UCVfP1W9kKxr_OB6RVtAJWXg"><i
+                class="fa-brands fa-youtube"></i></a>
+        <a class="sosial" href="https://music.apple.com/us/artist/tasch%C3%A9/1477379087"><i
+                class="fa-solid fa-music"></i></a>
+    </div>
 </div>
